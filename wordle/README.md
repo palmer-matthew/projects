@@ -8,11 +8,12 @@
 
 ### To Do:
 
-- Signal Game Over, Or Result of the Game, Maybe in a Popup
-- Change Keyboard Icons to Reflect Game Ouput
-- Check Generate A Different Puzzle on A Different Days
-- Don't GEnerate the Same Word, Or a Completed Word
-- Save the State of the A Guess
+- Signal Game Over, Or Result of the Game, Maybe in a Popup / Modal
+- Change Keyboard Icons to Reflect Game Output
+- Generate A Different Puzzle on a Different Day
+- Don't Generate a word used before
+- Save the state of the a current guess
+- Build the Keyboard Dynamically like the board
 
 ### Other Possiblilities:
 
