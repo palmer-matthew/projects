@@ -4,12 +4,15 @@
   "description": "Server for Real Time Chat",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-start": "nodemon ./server.js" 
   },
   "keywords": [
     "npm",
     "socket.io"
   ],
   "author": "palmer-matthew",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }

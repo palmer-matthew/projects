@@ -1,0 +1,44 @@
+body{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#message-container{
+    margin-top: 10px;
+    border: 1px solid black;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#message-container div{
+    background-color: #CCC;
+    padding: 5px;
+}
+
+#message-container div:nth-child(2n){
+    background-color: #FFF;
+}
+
+#form{
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#message-input, #room-input{
+    flex-grow: 1;
+    margin-left: 1em;
+}
+
+#send-button, #room-button{
+    width: 50px;
+    margin: 0 2em;
+}
