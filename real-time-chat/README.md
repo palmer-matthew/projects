@@ -3,4 +3,6 @@
 
 Objective:
 
-1) become familiar with Socket.io library
+1) exposure to Socket.io library
+2) Generate ideas for the game
+3) Complete Tutorial
