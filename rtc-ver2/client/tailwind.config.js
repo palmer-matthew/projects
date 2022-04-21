@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "red-hat": ['"Red Hat Text"', 'sans-serif']
+        "rh": ['"Red Hat Text"', 'sans-serif'],
+        "ks": ['"Kumbh Sans"', 'sans-serif']
       },
       color:{
         primary: '#01101B',
