@@ -3,13 +3,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "rh": ['"Red Hat Text"', 'sans-serif'],
-        "ks": ['"Kumbh Sans"', 'sans-serif']
+        rh: ['"Red Hat Text"', 'sans-serif'],
+        ks: ['"Kumbh Sans"', 'sans-serif']
       },
-      color:{
+      colors: {
         primary: '#01101B',
         grey: '#2D3944',
-        accent: '#27B281'
+        accent: '#27B281',
+        cultured: '#F5F5F5'
+      },
+      minWidth: {
+        '1/3': '33%'
+      },
+      minHeight: {
+        'modal': '450px'
       }
     },
   },
