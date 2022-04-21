@@ -1,14 +1,16 @@
 <template>
   <main>
     <h1>Testing D3 in Vue</h1>
-    <h4>First Experiment</h4>
+    <!-- <h4>First Experiment</h4>
     <Ex1 />
     <h4>Second Experiment</h4>
     <Ex2 />
     <h4>Third Experiment</h4>
     <Ex3 />
     <h4>Fourth Experiment</h4>
-    <Ex4 />
+    <Ex4 /> -->
+    <h4>Fifth Experiment</h4>
+    <Ex5 />
   </main>
 </template>
 
@@ -17,6 +19,7 @@ import Ex1 from "@/components/Ex1.vue";
 import Ex2 from "@/components/Ex2.vue";
 import Ex3 from "@/components/Ex3.vue";
 import Ex4 from "@/components/Ex4.vue";
+import Ex5 from "@/components/Ex5.vue";
 
 export default {
   name: 'App',
@@ -25,6 +28,7 @@ export default {
     Ex2,
     Ex3,
     Ex4,
+    Ex5,
   }
 }
 </script>
