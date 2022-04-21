@@ -10,7 +10,11 @@ const config = require("../config/env");
 //APP INIT
 const app = express();
 const server = http.Server(app);
-const io = require("socket.io")(server);
+const io = require("socket.io")(server, {
+    cors: {
+        origin: "*"
+    }
+});
 
 //MIDDLEWARE
 app.use(cors());
