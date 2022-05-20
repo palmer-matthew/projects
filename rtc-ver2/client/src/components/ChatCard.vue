@@ -7,7 +7,7 @@
          K
     </div>
     <div class="flex flex-col w-1/2">
-      <span class="">Name of Contact</span>
+      <span class="text-white ">Name of Contact</span>
       <span class="text-white text-xs  font-normal ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna ....
       </span>
