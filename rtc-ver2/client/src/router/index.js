@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Landing from '../views/Landing.vue'
+import Landing from '../views/Landing.vue';
+import Chat from '../views/Chat.vue';
 
 const routes = [
   {
     path: '/',
     name: 'landing',
     component: Landing
-  }
+  },
+  {
+    path: '/chat',
+    name: 'chat',
+    component: Chat
+  },
 ]
 
 const router = createRouter({

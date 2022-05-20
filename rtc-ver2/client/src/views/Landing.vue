@@ -14,8 +14,8 @@ export default {
     Login
   },
   mounted(){
-    socket.connect();
-    socket.disconnect();
+    // socket.connect();
+    // socket.disconnect();
   }
 }
 </script>

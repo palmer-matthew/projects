@@ -1,10 +1,41 @@
 <template>
   <div class="m-auto min-w-1/3 min-h-modal bg-primary rounded-md flex flex-col items-center">
     <Logo />
-    <form @submit.prevent=handleSubmit class="w-full flex flex-col">
-      <div v-for="(item, i) in inputs" :key=i class="px-10 flex flex-col mb-10">
-        <label :for=item class="font-rh font-medium text-white text-lg mb-2">{{ titleCase(item) }}:</label>
-        <input :name=item type="text" class="rounded-md h-12 px-2 focus:border-accent focus:border-4"/>
+    <form 
+      @submit.prevent=handleSubmit 
+      class="w-full flex flex-col"
+    >
+      <div 
+        class="px-10 flex flex-col mb-10"
+      >
+        <label 
+          for="username" 
+          class="font-rh font-medium text-white text-lg mb-2"
+        >
+          Username:
+        </label>
+        <input 
+          v-model="username"
+          name="username" 
+          type="text" 
+          class="rounded-md h-12 px-2 focus:border-accent focus:border-4"
+        />
+      </div>
+      <div 
+        class="px-10 flex flex-col mb-10"
+      >
+        <label 
+          for="password" 
+          class="font-rh font-medium text-white text-lg mb-2"
+        >
+          Password:
+        </label>
+        <input 
+          v-model="password"
+          name="password" 
+          type="text" 
+          class="rounded-md h-12 px-2 focus:border-accent focus:border-4"
+        />
       </div>
       <div class="px-10 flex" >
         <button type="submit" class="mr-5 bg-accent text-white font-rh text-lg font-medium px-14 py-3 rounded-md">Login</button>
@@ -27,7 +58,8 @@ export default {
   },
   data(){
     return {
-      inputs : ["username", "password"]
+      username: "",
+      password: "",
     }
   },
   methods: {
@@ -37,8 +69,12 @@ export default {
       });
       return result.join("");
     },
-    handleSubmit(){
-      console.log("submitted")
+    handleSubmit(event){
+      console.log(this.username)
+      console.log(this.password)
+      // console.log("submitted")
+      // console.log(event.target)
+      // this.$router.push('chat');
     }
   }
 }

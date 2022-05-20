@@ -1,6 +1,6 @@
 import {io} from "socket.io-client";
 
-const URL = `${process.env.SERVER_URL}`;
+const URL = `http://localhost:8888/`;
 const socket = io(URL, {
     autoConnect: false
 });

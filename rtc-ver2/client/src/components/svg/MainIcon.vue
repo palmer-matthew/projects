@@ -1,0 +1,22 @@
+<template>
+    <svg 
+        :width=width 
+        :height=height 
+        viewBox="0 0 25 25" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M19.971 19.0801C23.804 15.2471 23.804 8.77013 19.971 4.93713C16.138 1.10413 9.661 1.10413 5.828 4.93713C1.995 8.77013 1.995 15.2471 5.828 19.0801C9.661 22.9131 16.138 22.9131 19.971 19.0801ZM7.951 7.06013C10.657 4.35313 15.142 4.35213 17.849 7.06013L7.951 16.9581C5.243 14.2511 5.241 9.76813 7.951 7.06013V7.06013Z" fill="white"/>
+    </svg>
+</template>
+
+<script>
+export default {
+    name: "MainIcon",
+    props: ["width", "height", "color"]
+}
+</script>
+
+<style>
+
+</style>
