@@ -16,7 +16,3 @@ export default {
     props: ["width", "height", "color"]
 }
 </script>
-
-<style>
-
-</style>
