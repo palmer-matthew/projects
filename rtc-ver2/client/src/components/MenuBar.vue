@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col px-auto">
+  <div class="bg-grey col-span-2 flex flex-col px-auto">
     <MainIcon
         class="mx-auto mb-10 mt-2.5"
         width="45px"
@@ -40,7 +40,6 @@ export default {
         return {
             selected: '#27B281',
             regular: '#01101B',
-            // selection: 'group',
         }
     }
 }
