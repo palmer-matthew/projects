@@ -30,8 +30,8 @@ export default {
         color: "",
         message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna ....",
         toread: 3,
-        design: "h-20 flex items-center pl-3 mb-2",
-        sdesign: "h-20 flex items-center pl-3 mb-2 border-r-4 border-accent",
+        design: "h-20 flex items-center pl-3 mb-2 hover:bg-secondary cursor-pointer",
+        sdesign: "h-20 flex items-center pl-3 mb-2 border-r-4 border-accent hover:bg-secondary cursor-pointer",
       }
     },
     created(){

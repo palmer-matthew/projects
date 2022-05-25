@@ -1,7 +1,7 @@
 <template>
   <main class="max-h-screen bg-primary col-span-10">
     <Header name="Messages" />
-    <div class=" h-4/5 overflow-y-auto px-5">
+    <div class="h-4/5 overflow-y-auto px-5">
         <ChatCard selected="true"/>
         <ChatCard />
         <ChatCard />
