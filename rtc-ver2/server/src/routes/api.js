@@ -15,7 +15,7 @@ router.route("/login").post(async (req, res) => {
     if (!(username && password)) {
 
         res.status(400).json({
-            message: "Invalid Parameters",
+            message: "Invalid Username and/or Password",
             status: 400
         });
         return;
@@ -24,9 +24,10 @@ router.route("/login").post(async (req, res) => {
     try{
         const user = await User.findOne({ username: username });
 
-        if(compareHash(password, user.password)){
+        if(user && compareHash(password, user.password)){
             res.status(200).json({
                 message: "Login Successful",
+                username: user.username,
                 loggedIn: true,
                 status: 200
             })
@@ -54,20 +55,20 @@ router.route("/login").post(async (req, res) => {
 router.route("/signup").post(async (req, res) => {
 
     const { username, password } = req.body;
-
+    
     if (!(username && password)) {
 
         res.status(400).json({
-            message: "Invalid Parameters",
+            message: "Invalid Username and/or Password",
             status: 400
         });
         return;
     }
 
     try{
-        const exist = User.countDocuments({ username: username });
+        const exist = await User.countDocuments({ username: username });
 
-        if(exist){
+        if(exist > 0){
             res.status(406).json({
                 status: 406,
                 message: "Username exists already"
